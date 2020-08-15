@@ -13,6 +13,7 @@ $(function() {
       },
       {
         received: function(data) {
+          console.log('lalala');
           var content = messageTemplate.children().clone(true, true);
           content.find('[data-role="user-avatar"]').attr('src', data.user_avatar_url);
           content.find('[data-role="message-text"]').text(data.message);
